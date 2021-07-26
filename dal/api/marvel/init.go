@@ -3,8 +3,8 @@ package marvel
 import (
 	"net/http"
 
-	"github.com/fgunawan1995/xendit/config"
-	"github.com/fgunawan1995/xendit/model"
+	"github.com/adrianhosman/structural-design-go/config"
+	"github.com/adrianhosman/structural-design-go/model"
 )
 
 type MarvelDAL interface {

@@ -1,4 +1,4 @@
-module github.com/fgunawan1995/xendit
+module github.com/adrianhosman/structural-design-go
 
 go 1.13
 

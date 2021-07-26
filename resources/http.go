@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/fgunawan1995/xendit/config"
+	"github.com/adrianhosman/structural-design-go/config"
 )
 
 func InitMarvelClient(cfg *config.Config) *http.Client {

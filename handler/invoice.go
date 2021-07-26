@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/fgunawan1995/xendit/model"
+	"github.com/adrianhosman/structural-design-go/model"
 	"github.com/gorilla/mux"
 	"github.com/pkg/errors"
 )

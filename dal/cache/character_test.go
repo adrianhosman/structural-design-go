@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fgunawan1995/xendit/model"
+	"github.com/adrianhosman/structural-design-go/model"
 	cache "github.com/patrickmn/go-cache"
 )
 

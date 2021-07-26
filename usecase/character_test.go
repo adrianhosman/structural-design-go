@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fgunawan1995/xendit/mocks"
-	"github.com/fgunawan1995/xendit/model"
+	"github.com/adrianhosman/structural-design-go/mocks"
+	"github.com/adrianhosman/structural-design-go/model"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/mock"
 )

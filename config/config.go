@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/fgunawan1995/xendit/util"
+	"github.com/adrianhosman/structural-design-go/util"
 )
 
 type Config struct {

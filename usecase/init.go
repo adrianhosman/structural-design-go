@@ -1,10 +1,10 @@
 package usecase
 
 import (
-	"github.com/fgunawan1995/xendit/config"
-	marveldal "github.com/fgunawan1995/xendit/dal/api/marvel"
-	cachedal "github.com/fgunawan1995/xendit/dal/cache"
-	"github.com/fgunawan1995/xendit/model"
+	"github.com/adrianhosman/structural-design-go/config"
+	marveldal "github.com/adrianhosman/structural-design-go/dal/api/marvel"
+	cachedal "github.com/adrianhosman/structural-design-go/dal/cache"
+	"github.com/adrianhosman/structural-design-go/model"
 )
 
 type impl struct {

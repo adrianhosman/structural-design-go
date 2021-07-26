@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	model "github.com/fgunawan1995/xendit/model"
+	model "github.com/adrianhosman/structural-design-go/model"
 	mock "github.com/stretchr/testify/mock"
 )
 

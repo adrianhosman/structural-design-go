@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/fgunawan1995/xendit/model"
+	"github.com/adrianhosman/structural-design-go/model"
 	"github.com/pkg/errors"
 )
 

@@ -3,7 +3,7 @@ package resources
 import (
 	"time"
 
-	"github.com/fgunawan1995/xendit/config"
+	"github.com/adrianhosman/structural-design-go/config"
 	cache "github.com/patrickmn/go-cache"
 )
 

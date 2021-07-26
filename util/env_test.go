@@ -3,7 +3,7 @@ package util
 import (
 	"testing"
 
-	"github.com/fgunawan1995/xendit/model"
+	"github.com/adrianhosman/structural-design-go/model"
 )
 
 func TestGetEnv(t *testing.T) {

@@ -8,12 +8,12 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
 
-	"github.com/fgunawan1995/xendit/config"
-	marveldal "github.com/fgunawan1995/xendit/dal/api/marvel"
-	cachedal "github.com/fgunawan1995/xendit/dal/cache"
-	"github.com/fgunawan1995/xendit/handler"
-	"github.com/fgunawan1995/xendit/resources"
-	"github.com/fgunawan1995/xendit/usecase"
+	"github.com/adrianhosman/structural-design-go/config"
+	marveldal "github.com/adrianhosman/structural-design-go/dal/api/marvel"
+	cachedal "github.com/adrianhosman/structural-design-go/dal/cache"
+	"github.com/adrianhosman/structural-design-go/handler"
+	"github.com/adrianhosman/structural-design-go/resources"
+	"github.com/adrianhosman/structural-design-go/usecase"
 	cron "github.com/robfig/cron/v3"
 )
 

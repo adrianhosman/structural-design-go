@@ -3,7 +3,7 @@ package util
 import (
 	"os"
 
-	"github.com/fgunawan1995/xendit/model"
+	"github.com/adrianhosman/structural-design-go/model"
 )
 
 func GetEnv() string {

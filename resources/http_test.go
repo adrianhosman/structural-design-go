@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fgunawan1995/xendit/config"
+	"github.com/adrianhosman/structural-design-go/config"
 )
 
 func TestInitMarvelClient(t *testing.T) {

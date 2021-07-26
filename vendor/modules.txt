@@ -1,0 +1,21 @@
+# github.com/davecgh/go-spew v1.1.1
+github.com/davecgh/go-spew/spew
+# github.com/gorilla/mux v1.8.0
+github.com/gorilla/mux
+# github.com/patrickmn/go-cache v2.1.0+incompatible
+github.com/patrickmn/go-cache
+# github.com/pkg/errors v0.9.1
+github.com/pkg/errors
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/robfig/cron/v3 v3.0.1
+github.com/robfig/cron/v3
+# github.com/rs/cors v1.8.0
+github.com/rs/cors
+# github.com/stretchr/objx v0.1.0
+github.com/stretchr/objx
+# github.com/stretchr/testify v1.4.0
+github.com/stretchr/testify/assert
+github.com/stretchr/testify/mock
+# gopkg.in/yaml.v2 v2.2.2
+gopkg.in/yaml.v2
