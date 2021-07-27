@@ -1,10 +1,11 @@
 package model
 
 type CalculationInvoiceResponse struct {
-	BusinessID             string            `json:"business_id"`
-	SubtotalPrice          float64           `json:"subtotal"`
-	SubTotalPriceFormatted string            `json:"subtotal_price_formatted"`
-	DetailProduct          DetailProductData `json:"detail_product"`
+	BusinessID             string               `json:"business_id"`
+	SubtotalPrice          float64              `json:"subtotal"`
+	SubTotalPriceFormatted string               `json:"subtotal_price_formatted"`
+	DetailProduct          []*DetailProductData `json:"detail_product"`
+	OtherProduct           []*DetailProductData `json:"other_product"`
 }
 
 type DetailProductData struct {

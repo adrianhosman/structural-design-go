@@ -4,6 +4,7 @@ import (
 	"github.com/adrianhosman/structural-design-go/config"
 	marveldal "github.com/adrianhosman/structural-design-go/dal/api/marvel"
 	cachedal "github.com/adrianhosman/structural-design-go/dal/cache"
+	repodal "github.com/adrianhosman/structural-design-go/dal/repo"
 	"github.com/adrianhosman/structural-design-go/model"
 )
 
@@ -11,6 +12,7 @@ type impl struct {
 	cfg    *config.Config
 	marvel marveldal.MarvelDAL
 	cache  cachedal.CacheDAL
+	repo   repodal.InvoiceDAL
 }
 
 type Usecase interface {
@@ -20,13 +22,15 @@ type Usecase interface {
 	GetAllCharacterIDs() ([]int64, error)
 	//SaveCharacters hit marvel character api multiple times and save array of character id to cache
 	SaveCharacters() error
+
 	CalculateInvoiceData(businessID string) (*model.CalculationInvoiceResponse, error)
 }
 
-func New(cfg *config.Config, marvel marveldal.MarvelDAL, cache cachedal.CacheDAL) Usecase {
+func New(cfg *config.Config, marvel marveldal.MarvelDAL, cache cachedal.CacheDAL, repo repodal.InvoiceDAL) Usecase {
 	return &impl{
 		cfg:    cfg,
 		marvel: marvel,
 		cache:  cache,
+		repo:   repo,
 	}
 }

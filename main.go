@@ -11,6 +11,7 @@ import (
 	"github.com/adrianhosman/structural-design-go/config"
 	marveldal "github.com/adrianhosman/structural-design-go/dal/api/marvel"
 	cachedal "github.com/adrianhosman/structural-design-go/dal/cache"
+	repodal "github.com/adrianhosman/structural-design-go/dal/repo"
 	"github.com/adrianhosman/structural-design-go/handler"
 	"github.com/adrianhosman/structural-design-go/resources"
 	"github.com/adrianhosman/structural-design-go/usecase"
@@ -26,7 +27,8 @@ func main() {
 	// Init layers
 	marvelDAL := marveldal.New(cfg, marvel)
 	cacheDAL := cachedal.New(cache)
-	usecaseLayer := usecase.New(cfg, marvelDAL, cacheDAL)
+	repoDal := repodal.New()
+	usecaseLayer := usecase.New(cfg, marvelDAL, cacheDAL, repoDal)
 	handlerLayer := handler.New(usecaseLayer)
 
 	// initNecessaryData(usecaseLayer)
@@ -58,7 +60,7 @@ func initHTTP(cfg *config.Config, handlerLayer *handler.Handler) {
 	r.HandleFunc("/", index).Methods(http.MethodGet)
 	// r.HandleFunc("/characters/{id}", handlerLayer.GetCharacterByID).Methods(http.MethodGet)
 	// r.HandleFunc("/characters", handlerLayer.GetAllCharacterIDs).Methods(http.MethodGet)
-	r.HandleFunc("/invoice/calculation", handlerLayer.CalculateInvoice).Methods(http.MethodGet)
+	r.HandleFunc("/invoice/calculation/{business_id}", handlerLayer.CalculateInvoice).Methods(http.MethodGet)
 
 	// Start server
 	c := cors.New(cors.Options{
